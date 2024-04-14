@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    background: linear-gradient(90deg, #00416A, #E4E5E6);
+    color: white;
+    padding: 10px;
+  }
+  
+  nav input {
+    padding: 5px;
+    margin-left: auto;
+    
+  }
+  
+  nav button {
+    padding: 5px;
+  }
+  body {
+    background: linear-gradient(90deg, #00416A, #E4E5E6);
+    text-align: center;
+  }
+
+  #newWord {
+    background-color: brown;
+  }
+  ul {
+    border: solid coral;
+    width: 10%;
+    text-align: left;
+    background: linear-gradient(90deg, #32cd21, #E4E5E6);
+  }
