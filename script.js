@@ -14,7 +14,8 @@ function addListItem(newWord) {
 }
 
 function addNewWord(newWord) {
-    const newDescription = document.getElementById("inputDescription").value.toLowerCase();
+    const newDescription = document.getElementById("inputDescription")
+                            .value.toLowerCase();
     const result = document.getElementById("result");
     words[newWord] = newDescription;
     result.innerHTML = "The word was added successfully";
@@ -25,10 +26,10 @@ function search() {
     let searchInput = document.getElementById("inputNav").value.toLowerCase();
     let resultSrc = document. getElementById ("result");
     if (words.hasOwnProperty(searchInput)) {
-        resultSrc.innerHTML = `<strong>${searchInput}</strong>: ${words[searchInput]}`;
+        resultSrc.innerHTML = `${searchInput}: ${words[searchInput]}`;
     } else {
-        resultSrc.innerHTML = "<strong>Sorry this word is not in system</strong><br>" + 
-        "DO YOU WANT TO ADD ? <br>";
+        resultSrc.innerHTML = "Sorry this word is not in system<br>" + 
+                              "DO YOU WANT TO ADD ? <br>";
         const button = document.createElement("button");
         const inportDesc = document.createElement("input");
         button.textContent = "ADD WORD";
